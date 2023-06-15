@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1.75rem;
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+    font: normal 500 1rem/1.5rem "Inter", sans-serif;
+    color: #667085;
+}
+
+.botoes {
+    display: flex;
+    gap: 1.875rem;
+}
+
+[data-botao="entrar"] {
+    font: normal 500 1rem/1.5rem "Inter", sans-serif;
+    color: #667085;
+    border: none;
+}
+
+[data-botao="cadastrar"] {
+    font: normal 500 1rem/1.5rem "Inter", sans-serif;
+    color: #FFFFFF;
+    padding: .625rem 1.125rem;
+    background-color: #8E2424;
+    border: 1px solid #8E2424;
+    border-radius: 8px;
+}
