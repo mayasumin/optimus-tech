@@ -1,3 +1,9 @@
+:root {
+    --text-color: #667085;
+    --main-color: #8E2424;
+    --font-family: "Inter", sans-serif;
+  }  
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +11,7 @@
     background: none;
 }
 
-header {
+nav {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -17,8 +23,8 @@ ul {
     display: flex;
     gap: 2rem;
     list-style-type: none;
-    font: normal 500 1rem/1.5rem "Inter", sans-serif;
-    color: #667085;
+    font: normal 500 1rem/1.5rem var(--font-family);
+    color: var(--text-color);
 }
 
 .botoes {
@@ -27,16 +33,42 @@ ul {
 }
 
 [data-botao="entrar"] {
-    font: normal 500 1rem/1.5rem "Inter", sans-serif;
-    color: #667085;
+    font: normal 500 1rem/1.5rem var(--font-family);
+    color: var(--text-color);
     border: none;
 }
 
 [data-botao="cadastrar"] {
-    font: normal 500 1rem/1.5rem "Inter", sans-serif;
+    font: normal 500 1rem/1.5rem var(--font-family);
     color: #FFFFFF;
     padding: .625rem 1.125rem;
-    background-color: #8E2424;
-    border: 1px solid #8E2424;
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
     border-radius: 8px;
 }
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 6rem 0;
+}
+
+header span {
+    font: normal 600 1rem/1.5rem var(--font-family);
+    color: var(--main-color);
+}
+
+header h1 {
+    font: normal 600 3rem/3.75rem var(--font-family);
+    letter-spacing: -2%;
+}
+
+header p {
+    width: 49.4375rem;
+    height: 3.75rem;
+    font: normal 400 1.25rem/1.875rem var(--font-family);
+    color: var(--text-color);
+}
+
