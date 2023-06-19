@@ -1,6 +1,7 @@
 :root {
     --text-color: #667085;
     --main-color: #8E2424;
+    --title-color: #101828;
     --font-family: "Inter", sans-serif;
   }  
 
@@ -63,6 +64,7 @@ header span {
 header h1 {
     font: normal 600 3rem/3.75rem var(--font-family);
     letter-spacing: -2%;
+    color: var(--title-color);
 }
 
 header p {
@@ -72,3 +74,33 @@ header p {
     color: var(--text-color);
 }
 
+.metricas-container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    margin: 6.6875rem 7rem 0;
+    gap: 2rem;
+}
+
+.metricas-container div {
+    width: 17.5rem;
+    height: 10.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.metricas-container div h2 {
+    font: normal 600 3.75rem/4.5rem var(--font-family);
+    letter-spacing: -2%;
+    color: var(--main-color);
+}
+
+.metricas-container div h3 {
+    font: normal 500 1.125rem/1.75rem var(--font-family);
+    color: var(--title-color);
+}
+
+.metricas-container div p {
+    font: normal 400 1rem/1.5rem var(--font-family);
+    color: var(--text-color);
+}
