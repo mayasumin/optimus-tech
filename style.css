@@ -2,6 +2,7 @@
     --text-color: #667085;
     --main-color: #8E2424;
     --title-color: #101828;
+    --border-color: #EAECF0;
     --font-family: "Inter", sans-serif;
   }  
 
@@ -131,4 +132,41 @@ header p {
     font: normal 400 1.25rem/1.875rem var(--font-family);
     color: var(--text-color);
     margin-bottom: 2.75rem;
+}
+
+.vagas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 4rem;
+    gap: 4rem;
+}
+
+.vagas-container .titulo-principal, .vagas-container .titulo {
+    font: normal 500 1.25rem/1.875rem var(--font-family);
+    color: var(--title-color);
+}
+
+.vagas-container .informacoes {
+    display: flex;
+    gap: 24px;
+    font: normal 500 1rem/1.5rem var(--font-family);
+    color: var(--text-color);
+}
+
+.design, .desenvolvimento-de-software {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.product-designer, .ux-designer, .desenvolvedor-ios, .desenvolvedor-front-end, .desenvolvedor-back-end {
+    width: 48rem;
+    height: 8.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border: 1px solid var(--border-color);
+    border-radius: 1.5rem;
+    padding: 1.5rem;
 }
